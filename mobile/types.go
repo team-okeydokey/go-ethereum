@@ -362,6 +362,7 @@ func (r *Receipt) GetTxHash() *Hash             { return &Hash{r.receipt.TxHash}
 func (r *Receipt) GetContractAddress() *Address { return &Address{r.receipt.ContractAddress} }
 func (r *Receipt) GetGasUsed() int64            { return int64(r.receipt.GasUsed) }
 
+// Info represents a diagnostic information about the whisper node.
 type Info struct {
 	info *whisper.Info
 }
